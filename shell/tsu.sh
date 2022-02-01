@@ -62,7 +62,7 @@ EOF
 TERMUX_FS="/data/data/com.termux/files"
 TERMUX_PREFIX="$TERMUX_FS/usr"
 TERMUX_PATH="$TERMUX_PREFIX/bin:$TERMUX_PREFIX/bin/applets"
-ROOT_HOME="$TERMUX_FS/home/.suroot"
+ROOT_HOME="${ROOT_HOME:-$TERMUX_FS/home/.suroot}"
 ANDROID_SYSPATHS="/system/bin:/system/xbin"
 EXTRA_SYSPATHS="/sbin:/sbin/bin"
 #ANDROID_ASROOT_SYSPATHS="/bin:/xbin"
